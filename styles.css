@@ -613,8 +613,7 @@ footer {
     }
 
     .hero-logo {
-        margin-right: 0;
-        max-width: 240px;
+        display: none;
     }
 
     .hero-content p {
