@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Roots Off</title>
+    <title>Privacy Policy | rooots.ai</title>
     <meta name="description"
-        content="Roots Off Privacy Policy - Our commitment to your data privacy and our zero-persistence architecture.">
+        content="rooots.ai Privacy Policy - prevention-first analytics with strict privacy guarantees.">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@500;700;800&family=Mako&family=Palanquin:wght@400;500;600;700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Assistant:wght@500;700;800&family=Mako&family=Palanquin:wght@400;500;600;700&display=swap">
+    </noscript>
 </head>
 
 <body>
@@ -20,8 +25,8 @@
         <nav class="nav-container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="assets/images/logo.svg" alt="Roots Off Logo" class="nav-logo">
-                    Roots Off
+                    <img src="assets/images/logo.svg" alt="rooots.ai logo" class="nav-logo">
+                    rooots.ai
                 </a>
             </div>
             <button class="mobile-menu-toggle" aria-label="Toggle navigation">
@@ -31,6 +36,7 @@
             </button>
             <ul class="nav-links">
                 <li><a href="index.html#product">Product</a></li>
+                <li><a href="index.html#how-to-use">How to use</a></li>
                 <li><a href="index.html#pricing">Pricing</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
                 <li><a href="privacy.html" class="active">Privacy</a></li>
@@ -48,17 +54,16 @@
 
             <div class="legal-document">
                 <h2>1. Introduction</h2>
-                <p>Welcome to Roots Off. We are committed to protecting your personal data and your source code. This
-                    Privacy Policy explains how we handle information when you use our Jira RC Analyzer service.</p>
+                <p>Welcome to rooots.ai. We are committed to protecting your personal data and source code. This policy
+                    explains how we handle information while delivering prevention-first Jira root cause analysis.</p>
 
-                <h2>2. Zero-Persistence Architecture</h2>
-                <p>Our core promise is that <strong>we do not store your code or your Jira ticket content</strong>. Our
-                    AI analysis engine works in transient memory:</p>
+                <h2>2. Privacy Guarantees and Zero-Persistence Processing</h2>
+                <p>Our core guarantees are explicit and consistent across our website and product messaging:</p>
                 <ul>
-                    <li>Code is pulled from your VCS (Git/Perforce) for analysis.</li>
-                    <li>Analysis happens in a secure, isolated sandbox.</li>
-                    <li>Once the analysis result is generated and stored in your Jira instance, all source data is
-                        immediately wiped from our buffers.</li>
+                    <li><strong>Customer code is never used to train models.</strong></li>
+                    <li><strong>Customer code is never stored on disk.</strong></li>
+                    <li>Code and ticket context are processed transiently in secure runtime memory.</li>
+                    <li>After analysis and configured Jira write-back, temporary processing buffers are cleared.</li>
                 </ul>
 
                 <h2>3. Data Collection</h2>
@@ -67,8 +72,8 @@
                     <li><strong>Account Information</strong>: Name, email address, and company name provided during
                         registration or contact.</li>
                     <li><strong>Configuration Data</strong>: Settings for your Jira integration and VCS connection.</li>
-                    <li><strong>Usage Metrics</strong>: Anonymous statistics on the number of tickets analyzed to manage
-                        your subscription tier.</li>
+                    <li><strong>Usage Metrics</strong>: Aggregated statistics (for example, tickets analyzed) used to
+                        manage plans and improve prevention outcomes.</li>
                 </ul>
 
                 <h2>4. Data Security</h2>
@@ -83,7 +88,8 @@
                 <p>We use a limited number of sub-processors to provide our service:</p>
                 <ul>
                     <li><strong>AWS</strong>: For infrastructure and secure compute environments.</li>
-                    <li><strong>OpenAI/Anthropic</strong>: For AI analysis (governed by zero-retention API agreements).
+                    <li><strong>LLM Providers</strong>: For AI analysis under strict contractual controls aligned to our
+                        no-training, no-disk-storage guarantees.
                     </li>
                 </ul>
 
@@ -100,7 +106,7 @@
 
     <footer>
         <div class="container footer-content">
-            <p>&copy; 2026 Roots Off. All rights reserved.</p>
+            <p>&copy; 2026 rooots.ai. All rights reserved.</p>
             <ul class="footer-links">
                 <li><a href="privacy.html">Privacy Policy</a></li>
                 <li><a href="terms.html">Terms of Service</a></li>

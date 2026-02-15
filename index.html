@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roots Off | AI-Powered Jira Root Cause Analysis</title>
+    <title>rooots.ai | Prevention-First Jira Root Cause Analysis</title>
     <meta name="description"
-        content="Roots Off uses AI to automatically analyze Jira bug patterns, identify root causes, and generate actionable insights without ever persisting your code or Jira data.">
+        content="rooots.ai helps engineering teams prevent repeat incidents with systematic Jira root cause analysis, privacy-first processing, and actionable Jira write-back.">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@500;700;800&family=Mako&family=Palanquin:wght@400;500;600;700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Assistant:wght@500;700;800&family=Mako&family=Palanquin:wght@400;500;600;700&display=swap">
+    </noscript>
 </head>
 
 <body>
@@ -20,8 +25,8 @@
         <nav class="nav-container">
             <div class="logo">
                 <a href="#hero">
-                    <img src="assets/images/logo.svg" alt="Roots Off Logo" class="nav-logo">
-                    Roots Off
+                    <img src="assets/images/logo.png" alt="rooots.ai logo" class="nav-logo">
+                    rooots.ai
                 </a>
             </div>
             <button class="mobile-menu-toggle" aria-label="Toggle navigation">
@@ -31,6 +36,7 @@
             </button>
             <ul class="nav-links">
                 <li><a href="#product">Product</a></li>
+                <li><a href="#how-to-use">How to use</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="privacy.html">Privacy</a></li>
@@ -42,35 +48,35 @@
         <section id="hero" class="parallax-section">
             <div class="parallax-bg" data-speed="0.5"></div>
             <div class="container hero-container">
-                <img src="assets/images/logo.svg" alt="Roots Off Logo" class="hero-logo">
+                <img src="assets/images/logo.png" alt="rooots.ai logo" class="hero-logo">
                 <div class="hero-content">
-                    <h1>Stop Guessing. <br>Start Solving.</h1>
-                    <p>AI-powered root cause analysis for Jira bugs. Automatically identify patterns, blame lines, and
-                        actionable fixes in minutes.</p>
+                    <span class="badge">"We put the ooo in root cause analysis"</span>
+                    <h1>Fix the pattern. <br>Not just the ticket.</h1>
+                    <p><b>rooots.ai</b> analyzes hundreds of Jira bugs at once and turns them into clear prevention
+                        priorities, so teams ship faster with fewer repeat incidents.</p>
                     <div class="cta-group">
-                        <a href="#product" class="btn btn-primary">How it works</a>
-                        <a href="#pricing" class="btn btn-secondary">View Pricing</a>
+                        <a href="#how-to-use" class="btn btn-primary">See how it works</a>
+                        <a href="#pricing" class="btn btn-secondary">View pricing</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Insights Overview Section -->
         <section class="container section">
             <div class="section-header centered">
-                <span class="badge">Insights</span>
-                <h2>Visualize Your Quality Gaps.</h2>
-                <p>Get instant visibility into top root causes, process gaps, and prevention opportunities across your
-                    entire engineering organization.</p>
+                <span class="badge">Trust</span>
+                <h2>Built for privacy-first engineering teams</h2>
+                <p>Customer code is never used to train models and never stored on disk. Analysis is transient,
+                    controlled, and built for security-conscious organizations.</p>
             </div>
-            <div class="mockup-frame" style="max-width: 1000px; margin: 4rem auto 0;">
+            <div class="mockup-frame" style="max-width: 1000px; margin: 3rem auto 0;">
                 <div class="mockup-header">
                     <div class="mockup-dot"></div>
                     <div class="mockup-dot"></div>
                     <div class="mockup-dot"></div>
                 </div>
                 <div class="mockup-content">
-                    <img src="assets/images/Screenshot 2026-01-11 at 22.44.40.png" alt="Roots Off Dashboard Overview"
+                    <img src="assets/images/Screenshot 2026-01-11 at 22.44.40.png" alt="rooots.ai dashboard overview"
                         loading="lazy">
                 </div>
             </div>
@@ -78,28 +84,36 @@
 
         <section id="product" class="container section">
             <div class="section-header">
-                <span class="badge">Intelligence</span>
-                <h2>From Chaos to Clarity. <br>Automatically.</h2>
+                <span class="badge">Systematic Learning</span>
+                <h2>Turn recurring bugs into prevention work your team can ship</h2>
+                <p>From issue patterns to code context, every signal is prioritized for action, not dashboard noise.</p>
             </div>
 
             <div class="section-image-side">
                 <div class="features-content">
                     <div class="feature-card">
                         <div class="icon">🔍</div>
-                        <h3>Pattern Detection</h3>
-                        <p>Clusters massive volumes of Jira tickets to identify systemic bugs across your entire
-                            project.</p>
+                        <h3>Find recurring failure patterns</h3>
+                        <p>Analyze Jira history at scale to surface bug families and where they originate in your
+                            delivery process.</p>
                     </div>
                     <div class="feature-card">
                         <div class="icon">💻</div>
-                        <h3>Code Correlation</h3>
-                        <p>Deep analysis of your VCS (Git/Perforce) to pinpoint exactly where things went wrong.</p>
+                        <h3>Connect tickets to code reality</h3>
+                        <p>Correlate Jira signals with GitHub, GitLab, Bitbucket, or Perforce context so fixes target
+                            causes, not symptoms.</p>
+                        <div class="vcs-icons">
+                            <img src="assets/images/github-icon.png" alt="GitHub" class="vcs-icon">
+                            <img src="assets/images/gitlab-icon.png" alt="GitLab" class="vcs-icon">
+                            <img src="assets/images/bitbucket-icon.png" alt="Bitbucket" class="vcs-icon">
+                            <img src="assets/images/p4-icon.png" alt="Perforce" class="vcs-icon">
+                        </div>
                     </div>
                     <div class="feature-card">
-                        <div class="icon">🛡️</div>
-                        <h3>Privacy First</h3>
-                        <p>No code or Jira data persists. Analysis is transient, secure, and compliant with SOC2/GDPR.
-                        </p>
+                        <div class="icon">🧠</div>
+                        <h3>Learn from every incident</h3>
+                        <p>Convert post-mortem knowledge into repeatable prevention playbooks and higher-confidence
+                            planning.</p>
                     </div>
                 </div>
                 <div class="image-container">
@@ -110,32 +124,80 @@
                             <div class="mockup-dot"></div>
                         </div>
                         <div class="mockup-content">
-                            <img src="assets/images/Screenshot 2026-01-11 at 22.45.26.png" alt="Code Hotspots Analysis"
-                                loading="lazy">
+                            <img src="assets/images/Screenshot 2026-01-11 at 22.45.26.png"
+                                alt="rooots.ai code correlation view" loading="lazy">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="how-to-use" class="container section">
+            <div class="section-header">
+                <span class="badge">How to use</span>
+                <h2>Go live in minutes</h2>
+                <p>Connect once, run your first scan, and push insights back into the workflow your team already uses.</p>
+            </div>
+            <div class="mascot-beside">
+                <div class="features-grid steps-grid">
+                <div class="feature-card step-card">
+                    <span class="step-label">Step 1</span>
+                    <h3>Connect Jira and your codebase</h3>
+                    <p>GitHub, GitLab, Perforce (P4), and Bitbucket are supported, including on-prem deployments through
+                        the On-prem Agent (beta).</p>
+                    <div class="vcs-icons">
+                        <img src="assets/images/github-icon.png" alt="GitHub" class="vcs-icon">
+                        <img src="assets/images/gitlab-icon.png" alt="GitLab" class="vcs-icon">
+                        <img src="assets/images/bitbucket-icon.png" alt="Bitbucket" class="vcs-icon">
+                        <img src="assets/images/p4-icon.png" alt="Perforce" class="vcs-icon">
+                    </div>
+                </div>
+                <div class="feature-card step-card">
+                    <span class="step-label">Step 2</span>
+                    <h3>Run your first scan</h3>
+                    <p>rooots.ai triages issues, analyzes history, and highlights the root causes most likely to repeat.
+                    </p>
+                </div>
+                <div class="feature-card step-card">
+                    <span class="step-label">Step 3</span>
+                    <h3>Write back to Jira</h3>
+                    <p>Publish findings to comments or custom fields so teams can act immediately without tool-switching.
+                    </p>
+                </div>
+                <div class="feature-card step-card">
+                    <span class="step-label">Step 4</span>
+                    <h3>Prioritize prevention work</h3>
+                    <p>Use trend reports to define prevention epics and reduce incident volume quarter over quarter.</p>
+                </div>
+                </div>
+                <img src="assets/images/looking-at-the-camera.png" alt="" class="mascot mascot-side" aria-hidden="true">
+            </div>
+        </section>
+
         <section class="container section">
             <div class="section-header">
-                <span class="badge">Integrations</span>
-                <h2>Advanced Integrations.</h2>
-                <p>Seamlessly connect with your existing tools and infrastructure.</p>
+                <span class="badge">Capabilities</span>
+                <h2>Technical depth for serious evaluations</h2>
+                <p>Clear implementation details for engineering, platform, and security stakeholders.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="icon">🔄</div>
                     <h3>Jira Write-back</h3>
-                    <p>Automatically post root causes as Jira comments or custom fields. Keep your team in sync without
-                        leaving Jira.</p>
+                    <p>Choose comments, custom fields, or both, so prevention insights appear directly in everyday ticket
+                        workflows.</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">🏢</div>
-                    <h3>On-Prem Agent</h3>
-                    <p>Self-hosted agent for private Git or Helix Core (Perforce) environments. Full control over
-                        your data.</p>
+                    <h3>On-prem Agent (beta)</h3>
+                    <p>Support private infrastructure with the on-prem agent beta while maintaining strict network and
+                        data boundaries.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Privacy Guarantees</h3>
+                    <p>Customer code is never used to train models and never stored on disk, consistently enforced
+                        across product and legal messaging.</p>
                 </div>
             </div>
         </section>
@@ -151,25 +213,24 @@
                         </div>
                         <div class="mockup-content">
                             <img src="assets/images/Screenshot 2026-01-11 at 22.45.44.png"
-                                alt="Actionable Epic Suggestions" loading="lazy">
+                                alt="rooots.ai prevention initiatives" loading="lazy">
                         </div>
                     </div>
                 </div>
                 <div class="features-content">
                     <span class="badge">Action</span>
-                    <h2>From Insight to Action.</h2>
-                    <p style="margin-bottom: 2rem;">Roots Off doesn't just find problems. It generates actionable Epics
-                        and initiatives to solve them for good.</p>
+                    <h2>From RCA output to prevention roadmap</h2>
+                    <p style="margin-bottom: 2rem;">Move from reactive ticket cleanup to focused prevention initiatives
+                        with measurable engineering impact.</p>
                     <div class="feature-card">
                         <div class="icon">🚀</div>
                         <h3>Epic Generation</h3>
-                        <p>Automatically group related Root Causes into high-level initiatives with clear deliverables.
-                        </p>
+                        <p>Group related root causes into practical epics with clear ownership and delivery value.</p>
                     </div>
                     <div class="feature-card">
                         <div class="icon">📈</div>
                         <h3>Impact Quantification</h3>
-                        <p>Understand exactly how much engineering time is "leaking" into preventable bug patterns.</p>
+                        <p>Estimate engineering time recaptured when recurring failures are prevented upstream.</p>
                     </div>
                 </div>
             </div>
@@ -177,71 +238,69 @@
 
         <section id="pricing" class="container section">
             <div class="section-header">
-                <span class="badge">Scalable</span>
-                <h2>Simple Pricing. No Surprises.</h2>
-                <p>Pay only for insights we're confident about. Scan as often as you want - we only count tickets we
-                    successfully analyzed with high confidence. Re-scans are always free.</p>
+                <span class="badge">Plans</span>
+                <h2>Simple pricing, built for scale</h2>
+                <p>Pay for high-confidence RCAs, scan as often as you need, and keep re-scans of already analyzed tickets
+                    free.</p>
             </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <h3>Free Trial</h3>
                     <div class="price">$0</div>
                     <ul>
-                        <li>50 High-Confidence RCAs (lifetime)</li>
-                        <li>Full RCA Analysis</li>
-                        <li>Jira Write-back</li>
-                        <li>VCS Integration</li>
-                        <li>Epic Generation</li>
+                        <li>50 high-confidence RCAs (lifetime)</li>
+                        <li>Jira write-back</li>
+                        <li>VCS correlation (GitHub, GitLab, Bitbucket, P4)</li>
+                        <li>Epic generation</li>
                     </ul>
-                    <a href="#contact" class="btn btn-outline">Start Free</a>
+                    <a href="#contact" class="btn btn-outline">Start free</a>
                 </div>
                 <div class="pricing-card featured">
                     <div class="flavor">Popular</div>
                     <h3>Starter</h3>
                     <div class="price">$99<span>/mo</span></div>
                     <ul>
-                        <li>350 High-Confidence RCAs/mo</li>
-                        <li>Full RCA Analysis</li>
-                        <li>Jira Write-back</li>
-                        <li>VCS Integration</li>
-                        <li>Epic Generation</li>
+                        <li>350 high-confidence RCAs/mo</li>
+                        <li>Jira write-back</li>
+                        <li>VCS correlation (GitHub, GitLab, Bitbucket, P4)</li>
+                        <li>Epic generation</li>
                     </ul>
                     <a href="#contact" class="btn btn-primary">Choose Starter</a>
                 </div>
                 <div class="pricing-card">
-                    <h3>Mid Level</h3>
+                    <h3>Growth</h3>
                     <div class="price">$190<span>/mo</span></div>
                     <ul>
-                        <li>1,000 High-Confidence RCAs/mo</li>
-                        <li>Full RCA Analysis</li>
-                        <li>Jira Write-back</li>
-                        <li>VCS Integration</li>
-                        <li>Epic Generation</li>
+                        <li>1,000 high-confidence RCAs/mo</li>
+                        <li>Jira write-back</li>
+                        <li>VCS correlation (GitHub, GitLab, Bitbucket, P4)</li>
+                        <li>Epic generation</li>
                     </ul>
-                    <a href="#contact" class="btn btn-outline">Go Mid</a>
+                    <a href="#contact" class="btn btn-outline">Choose Growth</a>
                 </div>
                 <div class="pricing-card">
                     <h3>Enterprise</h3>
                     <div class="price">$490<span>/mo</span></div>
                     <ul>
-                        <li>5,000 High-Confidence RCAs/mo</li>
-                        <li>Full RCA Analysis</li>
-                        <li>Jira Write-back</li>
-                        <li>VCS Integration</li>
-                        <li>Epic Generation</li>
+                        <li>5,000 high-confidence RCAs/mo</li>
+                        <li>Jira write-back</li>
+                        <li>VCS correlation (GitHub, GitLab, Bitbucket, P4)</li>
+                        <li>Epic generation + dedicated support</li>
                     </ul>
-                    <a href="#contact" class="btn btn-outline">Contact Sales</a>
+                    <a href="#contact" class="btn btn-outline">Contact sales</a>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="container section">
             <div class="section-header">
-                <span class="badge">Connection</span>
-                <h2>Get in Touch.</h2>
-                <p>Have questions or need a custom plan? We're here to help.</p>
+                <span class="badge">Contact</span>
+                <h2>Talk to the rooots.ai team</h2>
+                <p>Tell us about your environment, privacy requirements, and goals. We will map the fastest path to a
+                    production rollout.</p>
             </div>
-            <div class="contact-container">
+            <div class="mascot-beside mascot-beside--contact">
+                <div class="contact-container">
                 <form id="contact-form" class="glass-card">
                     <div class="form-row">
                         <div class="form-group">
@@ -260,18 +319,20 @@
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" required
-                            placeholder="How can we help you solve root causes?"></textarea>
+                            placeholder="How can we help you prevent recurring root causes?"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    <button type="submit" class="btn btn-primary btn-block">Send message</button>
                     <div id="form-status" class="status-msg"></div>
                 </form>
+                </div>
+                <img src="assets/images/winking.png" alt="" class="mascot mascot-side" aria-hidden="true">
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container footer-content">
-            <p>&copy; 2026 Roots Off. All rights reserved.</p>
+            <p>&copy; 2026 rooots.ai. All rights reserved.</p>
             <ul class="footer-links">
                 <li><a href="privacy.html">Privacy Policy</a></li>
                 <li><a href="terms.html">Terms of Service</a></li>
