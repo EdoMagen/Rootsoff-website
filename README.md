@@ -1,6 +1,6 @@
-# Roots Off Marketing Website
+# rooots.ai Marketing Website
 
-This directory contains the static marketing website for Roots Off (Jira RC Analyzer).
+This directory contains the static marketing website for rooots.ai (Jira RC Analyzer).
 
 ## Directory Structure
 
@@ -25,7 +25,7 @@ Then visit `http://localhost:8000` in your browser.
 
 ## Form Submission
 
-The contact form is configured to send data to the Roots Off Contact Service. To update the endpoint, modify the `fetch` URL in `script.js`.
+The contact form is configured to send data to the rooots.ai Contact Service. To update the endpoint, modify the `fetch` URL in `script.js`.
 
 ## Deployment
 
