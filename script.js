@@ -1,3 +1,35 @@
+// Gallery Rotation
+(function initGallery() {
+    const slides = document.querySelectorAll('.gallery-slide');
+    const dots = document.querySelectorAll('.gallery-dot');
+    if (!slides.length) return;
+
+    let current = 0;
+    let timer;
+
+    function show(idx) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = idx;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+    }
+
+    function next() { show((current + 1) % slides.length); }
+
+    function startTimer() { timer = setInterval(next, 4000); }
+    function resetTimer() { clearInterval(timer); startTimer(); }
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            show(Number(dot.dataset.index));
+            resetTimer();
+        });
+    });
+
+    startTimer();
+})();
+
 // Parallax Effect
 document.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;

@@ -171,11 +171,23 @@ h3 {
     margin-bottom: 2rem;
     font-size: 1.2rem;
 }
+.hero-content .header-container {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    gap: 1rem;
+}
 
 .hero-logo {
     max-width: 300px;
     width: 100%;
     margin-right: 4rem;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(3, 94, 123, 0.16));
+}
+.hero-secondary-logo {
+    display: none;
+    max-width: 120px;
     height: auto;
     filter: drop-shadow(0 10px 30px rgba(3, 94, 123, 0.16));
 }
@@ -326,6 +338,89 @@ h3 {
 .mascot {
     pointer-events: none;
     user-select: none;
+}
+
+.trust-content {
+    position: relative;
+}
+
+.gallery-wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    max-width: 840px;
+    margin: 3rem auto 0;
+}
+
+.gallery-frame {
+    flex: 1;
+    min-width: 0;
+}
+
+.gallery-track {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: #fff;
+}
+
+.gallery-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.gallery-slide.active {
+    opacity: 1;
+}
+
+.gallery-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 0;
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+}
+
+.gallery-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.25s;
+}
+
+.gallery-dot.active {
+    background: var(--color-primary);
+}
+
+.mascot-trust {
+    width: 200px;
+    flex-shrink: 0;
+    width: 300px;
+    flex-shrink: 0;
+    position: absolute;
+    right: -30px;
+    bottom: -20px;
+}
+
+@media (max-width: 768px) {
+    .gallery-wrapper {
+        align-items: center;
+    }
+
+    .mascot-trust {
+        width: 220px;
+        right: 0;
+    }
 }
 
 .mascot-beside {
@@ -712,7 +807,9 @@ footer {
     .hero-logo {
         display: none;
     }
-
+    .hero-secondary-logo {
+        display: inline-flex;
+    }
     .hero-content p {
         margin-left: auto;
         margin-right: auto;
