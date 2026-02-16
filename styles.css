@@ -126,6 +126,7 @@ header {
 .hero-bokeh {
     position: absolute;
     inset: 0;
+    display: block;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -799,7 +800,9 @@ footer {
 
 @media (max-width: 768px) {
     .hero-bokeh {
-        display: none;
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
     }
 
     .header-container {

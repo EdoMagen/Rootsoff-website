@@ -36,7 +36,6 @@
     const canvas = document.querySelector('.hero-bokeh');
     if (!hero || !canvas) return;
     const minimumDesktopWidth = 768;
-    if (window.innerWidth < minimumDesktopWidth) return;
 
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
@@ -240,9 +239,17 @@
     function refresh() {
         if (window.innerWidth < minimumDesktopWidth) {
             stop();
-            ctx.clearRect(0, 0, sceneWidth, sceneHeight);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            canvas.style.display = 'none';
+            canvas.style.width = '0px';
+            canvas.style.height = '0px';
+            canvas.width = 1;
+            canvas.height = 1;
             return;
         }
+        canvas.style.display = 'block';
+        canvas.style.width = '';
+        canvas.style.height = '';
         resizeCanvasAndScene();
         if (reduceMotionQuery.matches || lowDataMode) {
             stop();
