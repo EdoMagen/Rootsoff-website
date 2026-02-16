@@ -454,6 +454,7 @@ h3 {
     min-width: 0;
     padding-left: 40px;
 }
+
 .mascot-beside--contact .mascot-side {
     position: absolute;
 }
@@ -480,7 +481,7 @@ h3 {
 
     .mascot-side {
         width: 180px;
-        position: relative;
+        position: relative !important;
         align-self: center;
     }
 }
