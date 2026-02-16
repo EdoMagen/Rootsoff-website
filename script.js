@@ -98,9 +98,11 @@ if (contactForm) {
 
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData.entries());
+        const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        const contactApiBaseUrl = isLocalhost ? 'http://localhost:8080' : 'https://api.rooots.ai';
 
         try {
-            const response = await fetch('/api/v1/contact', {
+            const response = await fetch(`${contactApiBaseUrl}/api/v1/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
