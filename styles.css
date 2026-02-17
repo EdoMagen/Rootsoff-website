@@ -887,4 +887,8 @@ footer {
     .legal-document {
         padding: 1.6rem;
     }
+    
+    #pricing {
+        display: none;
+    }
 }
